@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ouo",
+  "name": "ouo",
+  "description": "Create your Time Task!",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Someoneice"],
+  "credits": "Someoneice",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
