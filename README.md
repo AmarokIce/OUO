@@ -1,16 +1,16 @@
 # OUO - With Task
-Welcome With Task!
+Welcome to With Task!
 
-OUO(With Task) is a task timer for minecraft and it can do something when a server is running.
+OUO(With Task) implements a task timer for minecraft and it can do specific things when a server is running.
 
-## Let's us starts!
-Good! OUO running like OVO (With Json) and you should create the dir and json by your self.
+## Let's start!
+Good! OUO runs like [OVO (With Json)](https://github.com/AmarokIce/WithJson) and you should create the dir and json by yourself.
 
-Now let's us create a dir with name "ouo" in your server loot dir.
+Now let's create a dir with name "ouo" in your server root dir.
 
-And now create your json with any named!
+And now create your json with any name!
 
-If you want use the daily cycle, please mark ``time`` in format. Like this:
+If you want a task to run in a daily cycle, please declare a ``time`` key in the block. Like this:
 ```Json
 {
     "type": "message",
@@ -20,7 +20,7 @@ If you want use the daily cycle, please mark ``time`` in format. Like this:
 }
 ```
 
-If you just want it run once, mark ``once`` is true.
+If you just want it to run only once, make ``once``\'s value true.
 
 <table>
     <tr>
@@ -41,7 +41,7 @@ If you just want it run once, mark ``once`` is true.
 }
 ```
 </td>
-<td>Send a message for all the player if online.</td>
+<td>Send a message to all online players.</td>
 </tr>
   <tr>
     <td><code>cleanItem</code></td>
@@ -55,8 +55,8 @@ If you just want it run once, mark ``once`` is true.
 }
 ```
 </td>
-<td>Clean all the item in world. <br/>
-Changed the blacklist(or whitelist) in config.json in this dir.</td>
+<td>Clean all the items in the world. <br/>
+Modify the blacklist(or whitelist) in config.json in the same dir.</td>
   </tr>
   <tr>
     <td><code>cleanEntity</code></td>
@@ -70,7 +70,7 @@ Changed the blacklist(or whitelist) in config.json in this dir.</td>
 }
 ```
 </td>
-    <td>Clean all the entity in the world without player.</td>
+    <td>Clean all the entities in the world, players excluded.</td>
   </tr>
   <tr>
     <td><code>event</code></td>
@@ -89,7 +89,7 @@ Changed the blacklist(or whitelist) in config.json in this dir.</td>
 }
 ```
 </td>
-    <td>Do a event to a player. It still under development</td>
+    <td>Do an event to a player(WIP).</td>
   </tr>
   <tr>
     <td><code>config</code></td>
@@ -104,8 +104,8 @@ Changed the blacklist(or whitelist) in config.json in this dir.</td>
 }
 ```
 </td>
-    <td>The blacklist(Or whitelist) for item entity. Why here no entity? The entity in 1.7.10 have no registryname and it's id ...<br />
-    Must mark the file named is <code>config.json</code>> !
+    <td>The blacklist(or whitelist) for item entities. You may be confused as to why you can only set these for item entities. It's because the common entities in 1.7.10 have no registry name or id...<br />
+    Must have the file named <code>config.json</code>> !
 </td>
   </tr>
 </table>
